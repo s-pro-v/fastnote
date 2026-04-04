@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "id": "c61f1425-0260-49de-8bd4-1f13536f4639",
+    "data": "2026-04-04T11:38:26.874Z",
+    "note": "{\"title\":\"biblioteki\",\"content\":\"<link href=\\\"https://cdn.jsdelivr.net/gh/s-pro-v/Industrial_HUD_Framework@main/css/style.css\\\" rel=\\\"stylesheet\\\">\\n    <link href=\\\"https://cdn.jsdelivr.net/gh/s-pro-v/Industrial_HUD_Framework@main/css/alert.css\\\" rel=\\\"stylesheet\\\">\\n\\n<script src=\\\"https://cdn.jsdelivr.net/gh/s-pro-v/Industrial_HUD_Framework@main/js/main.js\\\"></script>\\n<script src=\\\"https://cdn.jsdelivr.net/gh/s-pro-v/Industrial_HUD_Framework@main/js/industrial-hud.js\\\"></script>\\n\\n@import url(\\\"https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Share+Tech+Mono&display=swap\\\");\"}"
+  }
+]
