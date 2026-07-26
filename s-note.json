@@ -121,7 +121,7 @@
   },
   {
     "id": "12a54e53-9e1a-44b1-9b96-a041664727f4",
-    "data": "2026-07-26T21:37:57.524Z",
-    "note": "{\"title\":\"ht\",\"content\":\"<!-- Dodaj nową zakładkę (LATE) do kontenera z przyciskami (tabs) -->\\n<div class=\\\"ssp-tabs\\\">\\n    <button class=\\\"ssp-tab-btn active\\\" data-tab=\\\"critical\\\">CRITICAL <span id=\\\"tab-cnt-critical\\\">(0)</span></button>\\n    <button class=\\\"ssp-tab-btn\\\" data-tab=\\\"late\\\">LATE <span id=\\\"tab-cnt-late\\\">(0)</span></button>\\n    <button class=\\\"ssp-tab-btn\\\" data-tab=\\\"progress\\\">PROGRESS <span id=\\\"tab-cnt-progress\\\">(0)</span></button>\\n    <button class=\\\"ssp-tab-btn\\\" data-tab=\\\"finished\\\">FINISHED <span id=\\\"tab-cnt-finished\\\">(0)</span></button>\\n    <button class=\\\"ssp-tab-btn\\\" data-tab=\\\"out\\\">OUT <span id=\\\"tab-cnt-out\\\">(0)</span></button>\\n</div>\\n\\n<!-- Dodaj nowy kontener (pane-late) na zawartość -->\\n<div class=\\\"ssp-tab-content-container\\\">\\n    <div id=\\\"pane-critical\\\" class=\\\"ssp-tab-content active\\\"></div>\\n    <div id=\\\"pane-late\\\" class=\\\"ssp-tab-content\\\"></div>\\n    <div id=\\\"pane-progress\\\" class=\\\"ssp-tab-content\\\"></div>\\n    <div id=\\\"pane-finished\\\" class=\\\"ssp-tab-content\\\"></div>\\n    <div id=\\\"pane-out\\\" class=\\\"ssp-tab-content\\\"></div>\\n</div>\\n\"}"
+    "data": "2026-07-26T21:44:19.652Z",
+    "note": "{\"title\":\"ht\",\"content\":\"/* Pamiętaj o brutalistycznym stylu i ostrych krawędziach */\\n.ssp-card {\\n    border-radius: 0;\\n    /* Reszta Twoich stylów */\\n}\\n\\n/* Opcjonalny styl dla migającego czasu w zakładce LATE */\\n.late-blink {\\n    animation: blinker-late 1s linear infinite;\\n}\\n\\n@keyframes blinker-late {\\n    50% { opacity: 0.3; }\\n}\\n\"}"
   }
 ]
