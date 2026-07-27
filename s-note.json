@@ -191,8 +191,8 @@
   },
   {
     "id": "ef5db522-4e7a-470b-b331-bf3d38817f26",
-    "data": "2026-07-27T02:44:26.485Z",
-    "note": "{\"title\":\"jjjj\",\"content\":\"https://share.gemini.google/A7Y7CgMq4zfx\"}"
+    "data": "2026-07-27T02:51:28.642Z",
+    "note": "{\"title\":\"jjjj\",\"content\":\"Uncaught ReferenceError: injectFloatingHUD is not defined\"}"
   },
   {
     "id": "4d128fa4-a3d8-4d3c-a852-8156c7ec8d0f",
