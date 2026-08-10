@@ -136,7 +136,7 @@
   },
   {
     "id": "bc778735-6b53-4fdb-92f6-e52671bac0af",
-    "data": "2026-08-10T15:51:59.581Z",
-    "note": "{\"title\":\"runssss\",\"content\":\"Error in event handler: TypeError: Cannot read properties of undefined (reading 'toUpperCase')\\n\\n\\ni  \\n\\ndocument\\n    .getElementById(\\\"oxy-tracking-close\\\")\\n    .addEventListener(\\\"click\\\", () => {\\n      if (trackPanel.style.display === \\\"none\\\") {\\n      trackPanel.style.display = \\\"none\\\";\\n      trackBtn.style.background = \\\"transparent\\\";\\n      trackBtn.style.color = \\\"var(--col-progress)\\\";\\n      }\\n    });  nie dziala\"}"
+    "data": "2026-08-10T15:55:56.504Z",
+    "note": "{\"title\":\"runssss\",\"content\":\"    // ... reszta kodu injectTopBarHUD\\n    const trackPanel = document.getElementById('oxy-tracking-panel');\\n    const trackBtn = document.getElementById('ssp-btn-tracking');\\n    \\n    trackBtn.addEventListener('click', () => {\\n        if (trackPanel.style.display === 'none') {\\n            trackPanel.style.display = 'flex';\\n            trackBtn.style.background = \\\"var(--col-progress)\\\";\\n            trackBtn.style.color = \\\"var(--bg)\\\";\\n        } else {\\n            trackPanel.style.display = 'none';\\n            trackBtn.style.background = \\\"transparent\\\";\\n            trackBtn.style.color = \\\"var(--col-progress)\\\";\\n        }\\n    });\\n\\n    // POPRAWIONY PRZYCISK ZAMYKANIA [X] (Bez błędnego 'if')\\n    document.getElementById('oxy-tracking-close').addEventListener('click', () => {\\n        trackPanel.style.display = 'none';\\n        trackBtn.style.background = \\\"transparent\\\";\\n        trackBtn.style.color = \\\"var(--col-progress)\\\";\\n    });\\n\"}"
   }
 ]
