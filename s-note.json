@@ -136,7 +136,7 @@
   },
   {
     "id": "bc778735-6b53-4fdb-92f6-e52671bac0af",
-    "data": "2026-08-10T15:55:56.504Z",
-    "note": "{\"title\":\"runssss\",\"content\":\"    // ... reszta kodu injectTopBarHUD\\n    const trackPanel = document.getElementById('oxy-tracking-panel');\\n    const trackBtn = document.getElementById('ssp-btn-tracking');\\n    \\n    trackBtn.addEventListener('click', () => {\\n        if (trackPanel.style.display === 'none') {\\n            trackPanel.style.display = 'flex';\\n            trackBtn.style.background = \\\"var(--col-progress)\\\";\\n            trackBtn.style.color = \\\"var(--bg)\\\";\\n        } else {\\n            trackPanel.style.display = 'none';\\n            trackBtn.style.background = \\\"transparent\\\";\\n            trackBtn.style.color = \\\"var(--col-progress)\\\";\\n        }\\n    });\\n\\n    // POPRAWIONY PRZYCISK ZAMYKANIA [X] (Bez błędnego 'if')\\n    document.getElementById('oxy-tracking-close').addEventListener('click', () => {\\n        trackPanel.style.display = 'none';\\n        trackBtn.style.background = \\\"transparent\\\";\\n        trackBtn.style.color = \\\"var(--col-progress)\\\";\\n    });\\n\"}"
+    "data": "2026-08-10T16:20:55.161Z",
+    "note": "{\"title\":\"runssss\",\"content\":\"function detectDirection(lane, loc, ref) {\\n    // Zabezpieczenie dla łączenia stringów\\n    const textToSearch = ((lane || \\\"\\\") + \\\" \\\" + (loc || \\\"\\\") + \\\" \\\" + (ref || \\\"\\\")).toUpperCase();\\n    if (textToSearch.includes(\\\"WRO5\\\") && textToSearch.includes(\\\"KTW3\\\")) {\\n// ...\\n\"}"
   }
 ]
