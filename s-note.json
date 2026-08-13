@@ -181,17 +181,17 @@
   },
   {
     "id": "80d20cdb-a332-4df2-9f54-9ed0ee38ea2b",
-    "data": "2026-08-13T19:45:08.094Z",
-    "note": "{\"title\":\"button\",\"content\":\"// Wewnątrz funkcji extractSSPData(), pod zmienną statusUpper dodaj:\\nconst statusUpper = status.toUpperCase();\\nconst hasDriver = !!row.querySelector('.driverPresent'); // DETEKCJA KIEROWCY\\n\\nextractedData.push({\\n  baseTime,\\n  status,\\n  lane,\\n  loc,\\n  ref,\\n  carrier,\\n  trailer,\\n  hasDriver // DODANE DO PAYLOADU\\n});\\n\\n// ... [reszta kodu funkcji extractSSPData pozostaje bez zmian] ...\\n\\n// W bloku nasłuchiwania onMessage zmodyfikuj przypadek SSP_REFRESH_NOW:\\n} else if (message.type === \\\"SSP_REFRESH_NOW\\\") {\\n    // KLIKNIĘCIE NATYWNEGO PRZYCISKU NA STRONIE\\n    const nativeRefreshBtn = document.getElementById(\\\"manualRefresh\\\");\\n    if (nativeRefreshBtn) nativeRefreshBtn.click();\\n    \\n    extractSSPData();\\n    sendResponse({ ok: true });\\n}\\n\"}"
+    "data": "2026-08-13T20:07:10.307Z",
+    "note": "{\"title\":\"buttoni\",\"content\":\"// Wewnątrz funkcji extractSSPData(), pod zmienną statusUpper dodaj:\\nconst statusUpper = status.toUpperCase();\\nconst hasDriver = !!row.querySelector('.driverPresent'); // DETEKCJA KIEROWCY\\n\\nextractedData.push({\\n  baseTime,\\n  status,\\n  lane,\\n  loc,\\n  ref,\\n  carrier,\\n  trailer,\\n  hasDriver // DODANE DO PAYLOADU\\n});\\n\\n// ... [reszta kodu funkcji extractSSPData pozostaje bez zmian] ...\\n\\n// W bloku nasłuchiwania onMessage zmodyfikuj przypadek SSP_REFRESH_NOW:\\n} else if (message.type === \\\"SSP_REFRESH_NOW\\\") {\\n    // KLIKNIĘCIE NATYWNEGO PRZYCISKU NA STRONIE\\n    const nativeRefreshBtn = document.getElementById(\\\"manualRefresh\\\");\\n    if (nativeRefreshBtn) nativeRefreshBtn.click();\\n    \\n    extractSSPData();\\n    sendResponse({ ok: true });\\n}\\n\"}"
   },
   {
     "id": "de418ba6-06f3-4525-9573-2b006e4d5eb9",
-    "data": "2026-08-13T20:04:37.009Z",
-    "note": "{\"title\":\"oooppp\",\"content\":\"// Zmodyfikuj tę sekcję w renderSidebar:\\nconst cardBody = `\\n    <div class=\\\"card-body\\\">\\n        <div class=\\\"trailer-huge\\\"><span>TRAILER:</span>${item.trailer}</div>\\n        <div class=\\\"data-row\\\"><span>STATUS:</span> <b>${statusUpper}</b></div>\\n        ${directionRow}\\n        <div class=\\\"data-row\\\"><span>LANE:</span> <b>${item.lane || \\\"---\\\"}</b></div>\\n        ${vridClickRow(item.ref, item.hasDriver)} <!-- ZAKTUALIZOWANE WYWOŁANIE -->\\n        <div class=\\\"data-row\\\"><span>CARR:</span> <b title=\\\"${item.carrier}\\\">${item.carrier}</b></div>\\n        <div class=\\\"data-row\\\"><span>LOC:</span> <b>${item.loc}</b></div>\\n    </div>`;\\n\"}"
+    "data": "2026-08-13T20:07:16.953Z",
+    "note": "{\"title\":\"ooopppuuu\",\"content\":\"// Zmodyfikuj tę sekcję w renderSidebar:\\nconst cardBody = `\\n    <div class=\\\"card-body\\\">\\n        <div class=\\\"trailer-huge\\\"><span>TRAILER:</span>${item.trailer}</div>\\n        <div class=\\\"data-row\\\"><span>STATUS:</span> <b>${statusUpper}</b></div>\\n        ${directionRow}\\n        <div class=\\\"data-row\\\"><span>LANE:</span> <b>${item.lane || \\\"---\\\"}</b></div>\\n        ${vridClickRow(item.ref, item.hasDriver)} <!-- ZAKTUALIZOWANE WYWOŁANIE -->\\n        <div class=\\\"data-row\\\"><span>CARR:</span> <b title=\\\"${item.carrier}\\\">${item.carrier}</b></div>\\n        <div class=\\\"data-row\\\"><span>LOC:</span> <b>${item.loc}</b></div>\\n    </div>`;\\n\"}"
   },
   {
     "id": "3aad1dca-4dbb-496c-8c96-22e4fe920db8",
-    "data": "2026-08-13T20:04:48.614Z",
-    "note": "{\"title\":\"ouyt\",\"content\":\"document.getElementById('ssp-refresh-btn')?.addEventListener('click', () => {\\n    sendToTab(\\\"SSP_REFRESH_NOW\\\");\\n});\\n\"}"
+    "data": "2026-08-13T20:07:23.891Z",
+    "note": "{\"title\":\"ouytlll\",\"content\":\"document.getElementById('ssp-refresh-btn')?.addEventListener('click', () => {\\n    sendToTab(\\\"SSP_REFRESH_NOW\\\");\\n});\\n\"}"
   }
 ]
