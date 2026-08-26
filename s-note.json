@@ -151,8 +151,8 @@
   },
   {
     "id": "9fd736e5-e83b-4549-a379-0b1a2b7e2685",
-    "data": "2026-08-26T02:51:26.485Z",
-    "note": "{\"title\":\"ssa\",\"content\":\"Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.\\n\\n\\nUncaught TypeError: Cannot read properties of null (reading 'appendChild')\"}"
+    "data": "2026-08-26T03:01:03.709Z",
+    "note": "{\"title\":\"ssa\",\"content\":\"Uncaught ReferenceError: getYMSTableRoot is not defined\"}"
   },
   {
     "id": "7f03b233-b71d-400b-80a0-c59f092ad143",
