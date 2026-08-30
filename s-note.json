@@ -86,7 +86,7 @@
   },
   {
     "id": "3beb1367-f361-499c-95f8-239af4cbb601",
-    "data": "2026-08-30T00:18:59.263Z",
-    "note": "{\"title\":\"con\",\"content\":\"Uncaught Error: Extension context invalidated.\\n\\nif (typeof chrome !== \\\"undefined\\\" && chrome.storage && chrome.storage.local) {\\n    chrome.storage.local.set({ sspCrossData });\\n  }\"}"
+    "data": "2026-08-30T00:21:06.720Z",
+    "note": "{\"title\":\"con\",\"content\":\"  // Zabezpieczony zapis danych SSP do współdzielonej pamięci\\n  try {\\n      if (typeof chrome !== \\\"undefined\\\" && chrome.storage && chrome.storage.local) {\\n          chrome.storage.local.set({ sspCrossData });\\n      }\\n  } catch (e) {\\n      // Ignorowanie błędu \\\"Extension context invalidated\\\" podczas przeładowywania wtyczki\\n  }\\n\\n  // WYSYŁKA DO SIDEBARU\\n  if (typeof chrome !== \\\"undefined\\\" && chrome.runtime && chrome.runtime.id) {\\n    try {\\n      chrome.runtime.sendMessage(\\n        { type: \\\"SSP_UPDATE_DATA\\\", payload: extractedData },\\n        () => { let ignore = chrome.runtime.lastError; }\\n      );\\n    } catch (e) {}\\n  }\\n\"}"
   }
 ]
