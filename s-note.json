@@ -128,5 +128,10 @@
     "id": "d48f44ba-dc8d-427b-980c-1d3a8c5fbd47",
     "data": "2026-08-31T04:43:09.218Z",
     "note": "{\"title\":\"dark\",\"content\":\"edge://flags/#enable-force-dark\"}"
+  },
+  {
+    "id": "2256a3f9-ed6d-4e01-a405-03fafb05e999",
+    "data": "2026-09-04T10:34:26.981Z",
+    "note": "{\"title\":\"scrollbar\",\"content\":\"/* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */\\n* {\\n  scrollbar-width: 9px;\\n  scrollbar-color: #f59e0b #fffbeb;\\n}\\n\\n/* Legacy WebKit — older Chrome/Edge/Safari, radius, borders & shadows */\\n*::-webkit-scrollbar {\\n  width: 9px;\\n  height: 9px;\\n}\\n\\n*::-webkit-scrollbar-track {\\n  background-color: #fffbeb;\\n  border-radius: 0px;\\n}\\n\\n*::-webkit-scrollbar-track:hover {\\n  background-color: #fef3c7;\\n}\\n\\n*::-webkit-scrollbar-track:active {\\n  background-color: #fde68a;\\n}\\n\\n*::-webkit-scrollbar-thumb {\\n  background-color: #f59e0b;\\n  border-radius: 0px;\\n  min-height: 10px;\\n}\\n\\n*::-webkit-scrollbar-thumb:hover {\\n  background-color: #d97706;\\n}\\n\\n*::-webkit-scrollbar-thumb:active {\\n  background-color: #92400e;\\n}\\n\\n*::-webkit-scrollbar-button {\\n  display: none;\\n  width: 0;\\n  height: 0;\\n}\\n\"}"
   }
 ]
