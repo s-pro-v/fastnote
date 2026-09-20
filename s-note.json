@@ -153,5 +153,10 @@
     "id": "57e5c693-1ec3-4cfe-a04d-95da2bf891b2",
     "data": "2026-09-19T20:33:06.885Z",
     "note": "{\"title\":\"to\",\"content\":\"This image presents a stylized navigational map for an Amazon facility, blending a top-down aerial photograph of a massive warehouse with overlaid red and orange directional schematic lines. The layout is designed to guide drivers or personnel through a specific traffic flow, utilizing a combination of numbers and arrows to denote parking bays and movement corridors.\\n\\nThe left side of the image is dominated by the grey, industrial rooftop of the warehouse, characterized by rows of ventilation units and loading docks. A bold red line traces a path around the perimeter of the building, starting from a designated entrance marked \\\"WJAZD PODROŻ\\\" and circling clockwise toward a departure point labeled \\\"WYJAZD PODROŻ / DEPARTURE.\\\" Along this path, various numbered markers, such as 1, 24, 25, and 82, highlight specific points of interest or checkpoints along the building's edge.\\n\\nTo the right of the warehouse, the map transitions into a detailed parking or docking grid. Long orange arrows indicate the flow of traffic, moving vertically between numbered slots ranging from 16 up to 96. The rightmost edge of the map shows further numbering, reaching up to 208, suggesting a sprawling complex of berths. A small orange circle containing an \\\"X\\\" and the text \\\"TU JESTEŚ\\\" serves as a \\\"You Are Here\\\" marker, grounding the viewer's perspective within the facility's layout. Green emergency assembly icons are placed at the top and center, providing a clear visual reference for safety zones amidst the logistical complexity of the site.\"}"
+  },
+  {
+    "id": "e46ddce8-7811-4160-babb-75fef0319914",
+    "data": "2026-09-20T00:19:08.853Z",
+    "note": "{\"title\":\"nnn\",\"content\":\"<span ng-if=\\\"yardAsset.licensePlateIdentifier &amp;&amp; yardAsset.licensePlateIdentifier.registrationIdentifier\\\" class=\\\"ng-binding ng-scope\\\">NO354AC<br>PL</span>\"}"
   }
 ]
