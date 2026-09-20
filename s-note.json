@@ -156,7 +156,7 @@
   },
   {
     "id": "e46ddce8-7811-4160-babb-75fef0319914",
-    "data": "2026-09-20T00:21:55.806Z",
-    "note": "{\"title\":\"nnn\",\"content\":\"/* ==========================================================================\\nUłożenie tekstu z \\n w jednym poziomie (poziomo / w jednej linii)\\nKod HTML:\\n<span ng-if=\\\"...licensePlateIdentifier...\\\">NO354AC\\nPL</span>\\n========================================================================== */\\n​/*\\nROZWIĄZANIE 1 (Rekomendowane): Inline-Flex + Gap\\n​Ponieważ w kodzie źródłowym nie ma spacji (NO354AC\\nPL), samo ukrycie \\n\\nskleiłoby tekst w \\\"NO354ACPL\\\".\\nZastosowanie flexboxa zamienia węzły tekstu w elementy elastyczne,\\na 'gap' tworzy naturalny odstęp poziomy.\\n*/\\n​span[ng-if*=\\\"licensePlateIdentifier\\\"] {\\ndisplay: inline-flex;\\nalign-items: baseline; /* Wyrównuje tekst do wspólnej linii bazowej /\\ngap: 6px;              / Poziomy odstęp między numerem a krajem PL */\\n}\\n​/* Wyłączenie łamania wiersza /\\nspan[ng-if=\\\"licensePlateIdentifier\\\"] br {\\ndisplay: none;\\n}\\n​/*\\nROZWIĄZANIE 2 (Opcjonalne): Klasyczna zamiana \\n w spację\\n​Jeśli nie chcesz modyfikować kontenera 'span', możesz przekształcić\\nsam znacznik \\n w znak spacji:\\n/\\n/\\nspan[ng-if*=\\\"licensePlateIdentifier\\\"] br {\\ndisplay: inline;\\ncontent: \\\" \\\"; /* Zastępuje enter poziomą spacją */\\n}\\n*/\"}"
+    "data": "2026-09-20T00:28:44.081Z",
+    "note": "{\"title\":\"nnn\",\"content\":\"<span ng-if=\\\"yardAsset.licensePlateIdentifier &amp;&amp; yardAsset.licensePlateIdentifier.registrationIdentifier\\\" class=\\\"ng-binding ng-scope\\\">NO354AC<br>PL</span>\"}"
   }
 ]
