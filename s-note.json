@@ -1,8 +1,8 @@
 [
   {
     "id": "bb2a087a-f78c-412f-8972-1265b06c8197",
-    "data": "2026-10-06T16:50:51.975Z",
-    "note": "{\"title\":\"NOWY_DOKUMENT\",\"content\":\"const api = typeof chrome !== 'undefined' ? chrome : typeof browser !== 'undefined' ? browser : null;\\nif (api && api.sidePanel && api.sidePanel.setPanelBehavior) {\\n    api.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => { });\\n}\"}"
+    "data": "2026-10-06T16:55:19.716Z",
+    "note": "{\"title\":\"NOWY_DOKUMENT\",\"content\":\"const api = typeof browser !== 'undefined' ? browser : (typeof chrome !== 'undefined' ? chrome : null);\\n\\nif (api) {\\n  // 1. Ścieżka Chromium (Edge / Chrome)\\n  if (api.sidePanel && api.sidePanel.setPanelBehavior) {\\n    api.sidePanel.setPanelBehavior({ openPanelOnActionClick: true }).catch(() => {});\\n  }\\n\\n  // 2. Ścieżka Firefox (Gecko)\\n  if (api.sidebarAction && api.action && api.action.onClicked) {\\n    api.action.onClicked.addListener(async () => {\\n      try {\\n        // sidebarAction.toggle() przełącza otwarcie/zamknięcie paska\\n        if (typeof api.sidebarAction.toggle === 'function') {\\n          await api.sidebarAction.toggle();\\n        } else {\\n          await api.sidebarAction.open();\\n        }\\n      } catch (err) {\\n        console.error('[DEV_HUD] Błąd otwierania sidebarAction:', err);\\n      }\\n    });\\n  }\\n}\\n\"}"
   },
   {
     "id": "ee6fa932-c26c-4d1f-947a-462312813c91",
